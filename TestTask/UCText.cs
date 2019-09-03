@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace TestTask
 {
-    public partial class UCInt : UserControl
+    public partial class UCText : UserControl
     {
-        public UCInt()
+        public UCText()
         {
             InitializeComponent();
         }
 
-        public void SetUserControlInt(decimal value)
+        public void SetUserControlTextBox(string value)
         {
-            numericUpDown.Value = value;
+            MyTextBox.Text = value;
         }
     }
 }

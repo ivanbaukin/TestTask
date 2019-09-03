@@ -10,6 +10,8 @@ namespace TestTask
     {
         public int MyInt { get; set; }
         public string MyString { get; set; }
-        public double MyDouble { get; set; }
+        public int MyInt2 { get; set; }
+        public string MyString2 { get; set; }
+        // public double MyDouble { get; set; }
     }
 }

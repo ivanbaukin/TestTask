@@ -1,6 +1,6 @@
 ﻿namespace TestTask
 {
-    partial class UCInt
+    partial class UCText
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
+            this.lblMyText = new System.Windows.Forms.Label();
+            this.MyTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblMyText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblMyText.AutoSize = true;
+            this.lblMyText.Location = new System.Drawing.Point(33, 10);
+            this.lblMyText.Name = "lblMyText";
+            this.lblMyText.Size = new System.Drawing.Size(42, 13);
+            this.lblMyText.TabIndex = 0;
+            this.lblMyText.Text = "MyText";
             // 
-            // numericUpDown
+            // MyTextBox
             // 
-            this.numericUpDown.Location = new System.Drawing.Point(45, 9);
-            this.numericUpDown.Name = "numericUpDown";
-            this.numericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown.TabIndex = 1;
+            this.MyTextBox.Location = new System.Drawing.Point(36, 26);
+            this.MyTextBox.Name = "MyTextBox";
+            this.MyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.MyTextBox.TabIndex = 1;
             // 
-            // UCInt
+            // UCText
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.numericUpDown);
-            this.Controls.Add(this.label1);
-            this.Name = "UCInt";
-            this.Size = new System.Drawing.Size(176, 37);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
+            this.Controls.Add(this.MyTextBox);
+            this.Controls.Add(this.lblMyText);
+            this.Name = "UCText";
+            this.Size = new System.Drawing.Size(181, 60);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -65,7 +63,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown;
+        private System.Windows.Forms.Label lblMyText;
+        private System.Windows.Forms.TextBox MyTextBox;
     }
 }

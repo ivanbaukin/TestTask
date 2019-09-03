@@ -61,6 +61,12 @@
     <Compile Include="UCInt.Designer.cs">
       <DependentUpon>UCInt.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCText.Designer.cs">
+      <DependentUpon>UCText.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="UCInt.resx">
       <DependentUpon>UCInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCText.resx">
+      <DependentUpon>UCText.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
