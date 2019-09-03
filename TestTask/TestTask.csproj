@@ -52,9 +52,7 @@
     <Compile Include="Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Get\GetDataTimePicker.cs" />
-    <Compile Include="Get\GetNumericUpDown.cs" />
-    <Compile Include="Get\GetTextBox.cs" />
+    <Compile Include="GetUserControl.cs" />
     <Compile Include="Models.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -26,11 +26,14 @@ namespace TestTask
             }
             else if (date < dateTimePicker.MinDate)
             {
-                MessageBox.Show($"Ваше свойство {name} содержит: {date}, что превышает максимальное значение: {dateTimePicker.MinDate}", "Ошибка!");
+                MessageBox.Show($"Ваше свойство {name} содержит: {date}, что ниже минимального значения: {dateTimePicker.MinDate}", "Ошибка!");
                 lblDateTime.Text = name;
             }
-            dateTimePicker.Value = date;
-            lblDateTime.Text = name;
+            else
+            {
+                dateTimePicker.Value = date;
+                lblDateTime.Text = name;
+            }
         }
     }
 }

@@ -39,14 +39,8 @@ namespace TestTask
             var array = type.GetProperties();
             var tlp = tableLayoutPanel;
 
-            GetNumericUpDown getNumericUpDown = new GetNumericUpDown();
-            getNumericUpDown.GetNumeric(array, models, tlp);
-
-            GetTextBox getTextBox = new GetTextBox();
-            getTextBox.GetText(array, models, tlp);
-
-            GetDataTimePicker getDataTimePicker = new GetDataTimePicker();
-            getDataTimePicker.GetDateTime(array, models, tlp);
+            GetUserControl getNumericUpDown = new GetUserControl();
+            getNumericUpDown.GetUC(array, models, tlp);
 
         }
 
