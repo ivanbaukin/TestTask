@@ -19,10 +19,11 @@ namespace TestTask
 
         public void SetUserControlNumeric(decimal value, string name)
         {
+            
             if (value > numericUpDown.Maximum)
             {
                 MessageBox.Show($"Ваше свойство {name} содержит: {value}, что превышает максимальное значение: {numericUpDown.Maximum}", "Ошибка!");
-                lblMyInt.Text = name;
+                lblMyInt.Text = name;                
             }
             else if(value < numericUpDown.Minimum)
             {
@@ -33,6 +34,7 @@ namespace TestTask
             {
                 numericUpDown.Value = value;
                 lblMyInt.Text = name;
+                
             }
         }
     }

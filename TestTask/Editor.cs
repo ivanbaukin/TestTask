@@ -23,24 +23,24 @@ namespace TestTask
         {
             var models = new Models();
 
-            //models.MyInt = 15;
-            //models.MyString = "Text 1";
-            //models.Date1 = DateTime.Today;
-            //models.MyInt2 = 20;
-            //models.MyInt3 = 35;
-            //models.MyInt4 = 150;
-            //models.MyInt5 = 100;
-            //models.MyInt6 = -4;
-            //models.MyInt7 = 30;
-            //models.MyInt8 = 32;
-            //models.MyString2 = "Text 2";
+            models.MyInt = 15;
+            models.MyString = "Text 1";
+            models.Date1 = DateTime.Today;
+            models.MyInt2 = 20;
+            models.MyInt3 = 35;
+            models.MyInt4 = 150;
+            models.MyInt5 = 101;
+            models.MyInt6 = 102;
+            models.MyInt7 = 30;
+            models.MyInt8 = 32;
+            models.MyString2 = "Text 2";
 
             var type = models.GetType();
             var array = type.GetProperties();
             var tlp = tableLayoutPanel;
 
-            GetUserControl getNumericUpDown = new GetUserControl();
-            getNumericUpDown.GetUC(array, models, tlp);
+            GetUserControl getUC = new GetUserControl();
+            getUC.GetUC(array, models, tlp);
 
         }
 
