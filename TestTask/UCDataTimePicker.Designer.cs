@@ -1,6 +1,6 @@
 ﻿namespace TestTask
 {
-    partial class UCInt
+    partial class UCDataTimePicker
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMyInt = new System.Windows.Forms.Label();
-            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.lblDateTime = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblMyInt
+            // dateTimePicker
             // 
-            this.lblMyInt.AutoSize = true;
-            this.lblMyInt.Location = new System.Drawing.Point(4, 11);
-            this.lblMyInt.Name = "lblMyInt";
-            this.lblMyInt.Size = new System.Drawing.Size(33, 13);
-            this.lblMyInt.TabIndex = 0;
-            this.lblMyInt.Text = "MyInt";
+            this.dateTimePicker.Location = new System.Drawing.Point(20, 34);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 0;
             // 
-            // numericUpDown
+            // lblDateTime
             // 
-            this.numericUpDown.Location = new System.Drawing.Point(45, 9);
-            this.numericUpDown.Name = "numericUpDown";
-            this.numericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown.TabIndex = 1;
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Location = new System.Drawing.Point(20, 15);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(63, 13);
+            this.lblDateTime.TabIndex = 1;
+            this.lblDateTime.Text = "lblDateTime";
             // 
-            // UCInt
+            // UCDataTimePicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.numericUpDown);
-            this.Controls.Add(this.lblMyInt);
-            this.Name = "UCInt";
-            this.Size = new System.Drawing.Size(176, 37);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
+            this.Controls.Add(this.lblDateTime);
+            this.Controls.Add(this.dateTimePicker);
+            this.Name = "UCDataTimePicker";
+            this.Size = new System.Drawing.Size(248, 64);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -65,7 +63,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblMyInt;
-        private System.Windows.Forms.NumericUpDown numericUpDown;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label lblDateTime;
     }
 }

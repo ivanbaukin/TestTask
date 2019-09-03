@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TestTask
 {
-    public partial class UCText : UserControl
+    public partial class UCDataTimePicker : UserControl
     {
-        public UCText()
+        public UCDataTimePicker()
         {
             InitializeComponent();
         }
 
-        public void SetUserControlTextBox(string value, string name)
+        public void SetUserControlDateTimePicker(DateTime date, string name)
         {
-            MyTextBox.Text = value;
-            lblMyText.Text = name;
+            dateTimePicker.Value = date;
+            lblDateTime.Text = name;
         }
     }
 }

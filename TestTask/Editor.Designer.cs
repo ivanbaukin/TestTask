@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tlp = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tlp
@@ -44,11 +45,23 @@
             this.tlp.Size = new System.Drawing.Size(212, 53);
             this.tlp.TabIndex = 1;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(291, 31);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 465);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(390, 465);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.tlp);
             this.Name = "Editor";
             this.Text = "Editor";
@@ -59,6 +72,7 @@
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel tlp;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
