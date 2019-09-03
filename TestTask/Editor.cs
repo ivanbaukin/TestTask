@@ -15,65 +15,39 @@ namespace TestTask
         public Editor()
         {
             InitializeComponent();
-            MyProp();
             Edit();
         }
 
-        Models models = new Models();
+        
         public void Edit()
         {
+            var models = new Models();
+
+            //models.MyInt = 15;
+            //models.MyString = "Text 1";
+            //models.Date1 = DateTime.Today;
+            //models.MyInt2 = 20;
+            //models.MyInt3 = 35;
+            //models.MyInt4 = 150;
+            //models.MyInt5 = 100;
+            //models.MyInt6 = -4;
+            //models.MyInt7 = 30;
+            //models.MyInt8 = 32;
+            //models.MyString2 = "Text 2";
+
             var type = models.GetType();
             var array = type.GetProperties();
+            var tlp = tableLayoutPanel;
 
-            foreach (var item in array)
-            {
-                if (item.PropertyType == typeof(Int32))
-                {
-                    UCInt uCInt = new UCInt();
+            GetNumericUpDown getNumericUpDown = new GetNumericUpDown();
+            getNumericUpDown.GetNumeric(array, models, tlp);
 
-                    var value = Convert.ToDecimal(item.GetValue(models));
-                    string getNameProp = item.Name;
-                    uCInt.SetUserControlNumeric(value, getNameProp);
+            GetTextBox getTextBox = new GetTextBox();
+            getTextBox.GetText(array, models, tlp);
 
-                    tlp.Controls.Add(uCInt);
-                }
+            GetDataTimePicker getDataTimePicker = new GetDataTimePicker();
+            getDataTimePicker.GetDateTime(array, models, tlp);
 
-                if (item.PropertyType == typeof(String))
-                {
-                    UCText uCText = new UCText();
-
-                    var value = item.GetValue(models).ToString();
-                    string getNameProp = item.Name;
-                    uCText.SetUserControlTextBox(value, getNameProp);
-
-                    tlp.Controls.Add(uCText);
-                }
-
-                if (item.PropertyType == typeof(DateTime))
-                {
-                    UCDataTimePicker uCDataTimePicker = new UCDataTimePicker();
-
-                    var value = Convert.ToDateTime(item.GetValue(models));
-                    string getNameProp = item.Name;
-                    uCDataTimePicker.SetUserControlDateTimePicker(value, getNameProp);
-
-                    tlp.Controls.Add(uCDataTimePicker);
-                }
-            }
-        }
-        public void MyProp()
-        {
-            models.MyInt = 15;
-            models.MyString = "Text 1";
-            models.Date1 = DateTime.Today.AddDays(4).AddMonths(5);
-            models.MyInt2 = 20;
-            models.MyInt3 = 35;
-            models.MyInt4 = 150;
-            models.MyInt5 = 100;
-            models.MyInt6 = -4;
-            models.MyInt7 = 30;
-            models.MyInt8 = 32;
-            models.MyString2 = "Text 2";
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)

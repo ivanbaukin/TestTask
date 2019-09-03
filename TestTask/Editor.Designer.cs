@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tlp = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // tlp
+            // tableLayoutPanel
             // 
-            this.tlp.AutoScroll = true;
-            this.tlp.AutoSize = true;
-            this.tlp.ColumnCount = 1;
-            this.tlp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp.Location = new System.Drawing.Point(45, 12);
-            this.tlp.Name = "tlp";
-            this.tlp.RowCount = 1;
-            this.tlp.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlp.Size = new System.Drawing.Size(212, 53);
-            this.tlp.TabIndex = 1;
+            this.tableLayoutPanel.AutoScroll = true;
+            this.tableLayoutPanel.AutoSize = true;
+            this.tableLayoutPanel.ColumnCount = 1;
+            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel.Location = new System.Drawing.Point(45, 12);
+            this.tableLayoutPanel.Name = "tableLayoutPanel";
+            this.tableLayoutPanel.RowCount = 1;
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel.Size = new System.Drawing.Size(212, 53);
+            this.tableLayoutPanel.TabIndex = 1;
             // 
             // btnEdit
             // 
@@ -62,7 +62,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(390, 465);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.tlp);
+            this.Controls.Add(this.tableLayoutPanel);
             this.Name = "Editor";
             this.Text = "Editor";
             this.ResumeLayout(false);
@@ -71,7 +71,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TableLayoutPanel tlp;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
         private System.Windows.Forms.Button btnEdit;
     }
 }
