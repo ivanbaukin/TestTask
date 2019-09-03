@@ -16,7 +16,7 @@ namespace TestTask
             {
                 if (item.PropertyType == typeof(DateTime))
                 {
-                    UCDataTimePicker uCDataTimePicker = new UCDataTimePicker();
+                    UCDateTimePicker uCDataTimePicker = new UCDateTimePicker();
 
                     var value = Convert.ToDateTime(item.GetValue(models));
                     string getNameProp = item.Name;

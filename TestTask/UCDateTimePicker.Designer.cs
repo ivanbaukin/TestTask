@@ -1,6 +1,6 @@
 ﻿namespace TestTask
 {
-    partial class UCDataTimePicker
+    partial class UCDateTimePicker
     {
         /// <summary> 
         /// Required designer variable.

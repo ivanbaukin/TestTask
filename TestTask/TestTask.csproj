@@ -58,11 +58,11 @@
     <Compile Include="Models.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCDataTimePicker.cs">
+    <Compile Include="UCDateTimePicker.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCDataTimePicker.Designer.cs">
-      <DependentUpon>UCDataTimePicker.cs</DependentUpon>
+    <Compile Include="UCDateTimePicker.Designer.cs">
+      <DependentUpon>UCDateTimePicker.cs</DependentUpon>
     </Compile>
     <Compile Include="UCInt.cs">
       <SubType>UserControl</SubType>
@@ -88,8 +88,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCDataTimePicker.resx">
-      <DependentUpon>UCDataTimePicker.cs</DependentUpon>
+    <EmbeddedResource Include="UCDateTimePicker.resx">
+      <DependentUpon>UCDateTimePicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCInt.resx">
       <DependentUpon>UCInt.cs</DependentUpon>

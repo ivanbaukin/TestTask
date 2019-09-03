@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestTask
 {
-    public partial class UCDataTimePicker : UserControl
+    public partial class UCDateTimePicker : UserControl
     {
-        public UCDataTimePicker()
+        public UCDateTimePicker()
         {
             InitializeComponent();
         }
