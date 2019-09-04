@@ -53,25 +53,25 @@
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
     <Compile Include="GetUserControl.cs" />
-    <Compile Include="Models.cs" />
+    <Compile Include="GetProperties.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCDateTimePicker.cs">
+    <Compile Include="UserControl\UCDateTimePicker.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCDateTimePicker.Designer.cs">
+    <Compile Include="UserControl\UCDateTimePicker.Designer.cs">
       <DependentUpon>UCDateTimePicker.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCInt.cs">
+    <Compile Include="UserControl\UCInt.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCInt.Designer.cs">
+    <Compile Include="UserControl\UCInt.Designer.cs">
       <DependentUpon>UCInt.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCText.cs">
+    <Compile Include="UserControl\UCText.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCText.Designer.cs">
+    <Compile Include="UserControl\UCText.Designer.cs">
       <DependentUpon>UCText.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Editor.resx">
@@ -86,13 +86,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCDateTimePicker.resx">
+    <EmbeddedResource Include="UserControl\UCDateTimePicker.resx">
       <DependentUpon>UCDateTimePicker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCInt.resx">
+    <EmbeddedResource Include="UserControl\UCInt.resx">
       <DependentUpon>UCInt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCText.resx">
+    <EmbeddedResource Include="UserControl\UCText.resx">
       <DependentUpon>UCText.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

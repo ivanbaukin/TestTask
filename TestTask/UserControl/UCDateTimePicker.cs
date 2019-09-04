@@ -16,7 +16,11 @@ namespace TestTask
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Присваевает Lable и DataTimePicker значение. Также проверяет на порог минимального и максимального значения
+        /// </summary>
+        /// <param name="date">date</param>
+        /// <param name="name">name строковое значение</param>
         public void SetUserControlDateTimePicker(DateTime date, string name)
         {
             if (date > dateTimePicker.MaxDate)

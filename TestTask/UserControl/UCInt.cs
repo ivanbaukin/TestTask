@@ -16,10 +16,11 @@ namespace TestTask
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Присваевает Lable и NumericUpDown значение. Также проверяет на порог минимального и максимального значения
+        /// </summary>
         public void SetUserControlNumeric(decimal value, string name)
         {
-            
             if (value > numericUpDown.Maximum)
             {
                 MessageBox.Show($"Ваше свойство {name} содержит: {value}, что превышает максимальное значение: {numericUpDown.Maximum}", "Ошибка!");

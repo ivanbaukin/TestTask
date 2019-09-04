@@ -8,8 +8,14 @@ using System.Windows.Forms;
 
 namespace TestTask
 {
+    /// <summary>
+    /// Основной класс получения типов User Control
+    /// </summary>
     class GetUserControl
     {
+        /// <summary>
+        /// Получает User Control типов Int32, String, DateTime
+        /// </summary>
         public void GetUC(PropertyInfo[] collection, object models, TableLayoutPanel tlp)
         {
             foreach (var item in collection)

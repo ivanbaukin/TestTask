@@ -16,7 +16,9 @@ namespace TestTask
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Присваевает Lable и TextBox значение.
+        /// </summary>
         public void SetUserControlTextBox(string value, string name)
         {
             MyTextBox.Text = value;
